@@ -6,7 +6,7 @@ This is a 5 day workshop on **Digital vlsi design and soc planning** where we ca
 -  [SKY130_DAY3: Design Library Cell using Magic Layout & NGSpice Characterization](#sky130_day3-design-library-cell-using-magic-layout--ngspice-characterization)  
 - [SKY130_DAY4: Pre-layout Timing Analysis & Importance of Good Clock Tree](#sky130_day4-pre-layout-timing-analysis--importance-of-good-clock-tree)  
 - [SKY130_DAY5: Final Steps for RTL2GDS using TritonRoute & OpenSTA](#sky130_day5-final-steps-for-rtl2gds-using-tritonroute--opensta)  
- 
+  
 
 ---
 
