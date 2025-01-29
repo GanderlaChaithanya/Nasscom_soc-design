@@ -288,4 +288,180 @@ Schematic check, ensuring that the layout matches the schematic in terms ofconne
 ### **13.DESIGN RULE CHECK(.drc):**
 Contains results from the Design Rule Check, 
 which ensures that the layout adheres to the design rules specified by the foundry
+# *WORKING WITH OPENSOURCE EDA TOOLS:*
+Openlane consists of various tools.Let’s know about openlane_directory 
 
+➢ Open the Terminal. 
+
+➢ Go to openlane directory using cd Desktop/work/tools/openlane_working_dir.
+
+**images**
+
+**openlane_working_dir** consists of three subdirectories:
+
+1.pdks 2.openlane_old 3.openlane
+
+➢ Go to **pdks** directory.
+
+Pdks directory consits of all the inofrmation related sky130nm technology. We can see three sub directories: 1) sky130A 2)open_pdks 3)skywater_pdk
+
+**images**
+
+we work with skywater-pdk. This pdk contains all related lef files, .lib files, 
+timing etc.
+
+Now lets go to the sky130A directory
+
+**images**
+**images**
+
+let us see libs.tech
+
+**libs.tech:**
+This directory consists of list of tools used in the openlane.
+**images**
+
+**libs.ref:**
+it contains all the process specific files with cell , timing etc.
+**images**
+
+ow lets go to the **sky_130_fd_sc_hd** directory. (fd-abbrivieated for foundry, scstandard cell, hd-high density)
+
+➢ open **sky130_fd_sc_hd** directory and then techlef. 
+**images**
+**images**
+
+techlef files are saved with .tlef extension.
+Now go back to the **openlane_working_directory**. And then open **openlane.**
+
+**images**
+This directory consists of various files related to the openlane flow like 
+configurations, README.md and design examples and many more. 
+
+ Now, go to the designs directory. 
+ Here, we will see different design examples, which are already present in 
+openlane and also some new designs are going to be added later. 
+
+ In these examples, we are going to work with the design picorv32a.
+ Navigate to the picorv32a directory.
+ 
+ **images**
+ 
+ **images**
+ 
+Here we can see different files inlcuding config.tcl and src.
+
+ **config.tcl** : Then config.tcl file containsTcl (Tool Command Language) 
+commands that define various settings and parameters crucial for executing the 
+Openlane flow tailored to a specific design project. Within this file, essential 
+design parameters such as the project name, file paths, clock frequency targets, 
+and environmental conditions are typically specified. Additionally, it houses 
+technology-specific details such as the chosen technology node, library paths, and 
+cell specifications necessary for the design process. 
+
+ Now, go to the src directory as shown below:
+ **images**
+ Here, we can see the important files related to the design.
+ - picorv32a.v : It consists the rtl hardware description of the design. 
+- picorv32a.sdc: It contains the variois design constraints like timing constraints, 
+input, output constraints etc. 
+ Now, run the below command, to read the README.md file
+**images**
+  **images**
+  This file contains Various parameters about OPENLANE design flow, openlane 
+directory structure and various commands used in the openlane flow both in 
+Interactive and Autonomous flow.
+
+ Now, go back to the openlane directory, now go to the configuration directory
+ **images**
+ here we have all the tcl files, which are essential in executing openlane flow.
+Now lets us know how to open openlane prompt.
+
+➔ Open the directory openlane
+
+➔ type docker to launch openlane as below
+ **images**
+ after that, type ./flow.tcl -interactive so that it starts in interactive mode, we can 
+see the results and reports in each step.
+
+➔ We require a package of 0.9
+
+➔ for that type package require openlane 0.9
+
+➔ and then type prep -design picorv32a 
+**images**
+In this case the lef and tlef are merged and formed as a single file that is 
+merged .lef 
+
+This merged.lef file contains the information related to cells and layers.
+ With this, the design setup is completed. 
+ 
+ As, we started the design flow of picorv32a, in the picorv32a directory, a folder 
+with the name runs is created as shown below indicating the ASIC design flow is 
+started 
+
+Now to check, go to designs directory and then go to picorv32a directory.
+In that go runs directory. You can see the design you have created.
+
+**images**
+Now open the directory you see. You can see different directories like tmp, reports
+and results are created. 
+
+In reports directly, we can review reports of every process in openlane flow as 
+shown below.
+
+ Similarly, in the results directly, we can review the resultant file of every process 
+in the interactive mode of openlane 
+
+Here you can see another config.tcl file. This file contains the information about 
+which design parameters are taken. And in this file, we can know, whether the 
+proper execution of every process in Openlane flow, is happenning or not
+
+**images**
+Now go to the tmp directory.
+
+Here, we can see the merged.lef file, which contains the design parameters like 
+default units for resistance, capacitance etc. 
+
+**images**
+Now you can go to the reports directory. You can see all the reports for synthesis, 
+floorplan,placement etc.
+
+now lets us see config.tcl present in the directory that you have created
+
+**images**
+**images**
+
+also let us see sky130A_sky130_fd_fc_hd_config.tcl 
+
+**images**
+
+There is an order of precendence in openlane to take the values regarding the 
+design requirements.
+
+ The precedence is as follows:
+- Default values
+-  Values from config.tcl file
+- Values from sky130A_sky130_fd_sc_hd_config.tcl file 
+**sky130A_sky130_fd_sc_hd_config.tcl** file has the highest precendece and 
+default values are of lowest precendence.
+
+ Now, let’s go to the openlane prompt, and run synthesis using run_synthesis and
+we get this 
+
+**images**
+
+Now, lets have the reports and results.
+
+In results, go to the synthesis directory.we can see **picorv32a.synthesis.v.**
+
+**images**
+
+**images**
+
+Here, you can see, various reports are generated. Out of these, **1-yosys_4.stat.rpt** 
+is the original report of the synthesis process 
+**images**
+**images**
+Now we can know the flipflop ratio: (number of d flip flopcells)/(number of cells)
+flip flop ratio=1613/14876=0.108
