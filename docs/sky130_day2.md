@@ -176,7 +176,8 @@ integrity will be lost. To avoid that, we place buffers, so that signal integrit
 maintained, and it reduces delay.A buffer is a logic gate that receives an input signal and 
 re-transmits it with minimal delay and minimal distortion.
 **images**
-LIBRARY: A library of standard cells is a collection of pre-designed, pre-verified 
+### **LIBRARY:**
+A library of standard cells is a collection of pre-designed, pre-verified 
 building blocks used in digital VLSI design to implement various logic functions, such 
 as gates, flip-flops, and buffers. Each standard cell in the library is characterized by its 
 functional behavior, size, timing, power consumption, and drive strength. These cells are
