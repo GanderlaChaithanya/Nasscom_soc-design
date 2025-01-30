@@ -197,7 +197,7 @@ similarly we can calculate fall time.
 Now, we have to make use of the li1 layer dimensions to convert tracks info to grid info as follows 
  in tckon.tcl, type grid 0.46um 0.34um 0.23um 0.17um. We get the output as follows:
  **images**
- LAB INTRODUCTION TO MAGIC AND STEPS TO LOAD SKY130 TECH RULES:
+###  **LAB INTRODUCTION TO MAGIC AND STEPS TO LOAD SKY130 TECH RULES:**
 
 Now, in this session, we will some osme of the DRC rules of sky130 tech. 
  For that, first we have to install a zip file. 
@@ -212,6 +212,19 @@ The "poly.9" error encountered in Magic layout typically points to an issue with
 drc errors for the above are:
  **images**
  **images**
- 
+ drc errors for the above are:
+  **images**
+  **images**
+  ### **LAB EXERCISE TO DESCRIBE DRC ERROR AS GEOMETRICAL CONSTRUCT.**
+   **images**
+  **images**
+ ### ** LAB CHALLANGE TO FIND MISSING OR INCORRECT RULES AND FIX THEM:
+  **images**
+  Here we got an error after placing an nsubstratecontact.
+Now we are going to edit sky130A.tech to fix the incorrect implementation
+   **images**
+    **images**
+      **images**
+   
 
                                                                    
