@@ -5,7 +5,9 @@
 ### **1. Package**
 It is the protective enclosure and interface for an ic providing electrical connections,thermal management,and mechanical support
 Below is QFN-48(quad flat no leads).
- **IMAGES**
+
+![package](./../Images/Day1_images/Package.png)
+ 
 Chip is located inside a package.chip is connected to different pins of package. In 
 package,we have 
 ### **GPIO PINS:**
