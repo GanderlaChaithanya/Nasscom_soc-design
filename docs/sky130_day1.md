@@ -60,9 +60,9 @@ their voltage levels to digital values that the microcontroller can process.
  Output pin for the clock signal from the external crystal oscillator.
 #### **XI (XTAL_IN/OSC_IN):**
  Input pin for the clock signal to the microcontroller from the external crystal oscillator.
-  **IMAGES**
+  ![chip_in_package](./../Images/Day1_images/chip_in_package.png)
  There are also some other components which we need to know:
-  **IMAGES**
+  ![pads_die_core](./../Images/Day1_images/pads_die_core.png)
 #### **Wire bonds:**
 Wire bonds are tiny wires used to connect integrated circuit (IC) chips or semiconductor
 devices to the external leads of the package or to other components on a printed circuit 
@@ -127,7 +127,8 @@ RISC-V (pronounced "risk-five") is an open-source Instruction Set Architecture (
 based on the principles of Reduced Instruction Set Computing (RISC). It was developed
 at UC Berkeley and is designed to be simple, modular, and extensible, making it ideal 
 for a wide range of applications, from microcontrollers to supercomputers.
-**IMAGES**
+
+![riscv](./../Images/Day1_images/RISC-V.png)
 ### **INSTRUCTION SET ARCHITECTURE:**
 An Instruction Set Architecture (ISA) is the interface between hardware and software 
 in a computer system. It defines the set of instructions that a processor can execute and 
@@ -145,7 +146,8 @@ We see that apps run on our laptops,mobile phones etc. They are all hardware. Ho
 does this happen?
 So,there is an interaction between apps and hardware, i.e system software.
  #### **SYSTEM SOFTWARE:**
- System software converts high level programming language like c,c++,java or python to binary level language which is understand by the hardware **IMAGES**
+ System software converts high level programming language like c,c++,java or python to binary level language which is understand by the hardware 
+ ![system_softwarre](./../Images/Day1_images/System_software.png)
  The major components in system software are 
 - 1.Operating system
 - 2.Compiler
@@ -161,21 +163,23 @@ generates ouptut.
 So, in general, The Instruction set Architecture is fed to the assembler through RISC-V 
 assembly language. We write a RTL(Register Transfer level) snippet which understands 
 instructions. Then we get a netlist for given RTL. It is implemented to hardware.
-**IMAGES**
+![risc_flow](./../Images/Day1_images/RISC_flow.png)
   ### **SOC:**
 A System on chip(S0C) is an integrated circuit that consolidates multiple components of a complete 
 system into a single chip. It typically includes Processor, memory, input/output interfaces,specialized 
 modules,power management. Soc optmize power,size and performance,making them ideal for compact
 and energy efficient deisgns.
  ### **SOC DESIGN FLOW:**
-SOC design flow involves several stages to develop a complete system on a chip.Here’s a brief overview **IMAGES**
+SOC design flow involves several stages to develop a complete system on a chip.Here’s a brief overview 
+![aoc_design_flow](./../Images/Day1_images/SOC_design_flow.png)
 ### **ASIC DESIGN FLOW:**
 The ASIC (Application-Specific Integrated Circuit) Design Flow is the step-by-step 
 process of designing and fabricating an ASIC .
 They require three important key components: 
 1. Register Transfer level Intellectual properties.
 2. Electronic design automation tools.
-3. Process design kit Data **IMAGES**
+3. Process design kit Data
+![pasic_design_flow](./../Images/Day1_images/ASIC_design_flow.png)
 ### **RTL IP’S:**
 RTL IPs (Register-Transfer Level Intellectual Properties) are reusable pre-designed 
 hardware components described in an HDL (e.g., Verilog, VHDL). They represent 
@@ -195,9 +199,10 @@ It acts as a interface between fabrication units and designers.
 The key components of PDK are design rules,technology files,standard cell libraries, 
 SPICE models etc.
 ### **DESIGN FLOW**
-**IMAGES**
+![ASIC_](./../Images/Day1_images/asic.png)
  ### **INTRODUCTION TO OPENLANE AND STRIVE SOC FAMILY**
- Strive is a family of open everything. For example like open pdk, open eda, open rtl**IMAGES**
+ Strive is a family of open everything. For example like open pdk, open eda, open rtl
+ ![pstrive](./../Images/Day1_images/Strive.png)
  ### **OPENLANE:**
 OpenLane is an open-source, fully automated RTL-to-GDSII (Register Transfer Level 
 to Graphic Database System II) flow for digital ASIC design. It is a part of the 
@@ -223,7 +228,7 @@ customize individual steps as needed.In this mode, designers interact with OpenL
 via a command-line interface (CLI) to execute specific stages of the flow manually. 
 Openlane has the best of flow configuration. They have 43 best design configuration
 ### **Tools used in openlane flow:**
-**images**
+![Openlane_flow](./../Images/Day1_images/Openlane_flow.png)
  
 ### **YOSYS:**
 Yosys is an open-source framework for Verilog synthesis. It converts high level RTL descriptions into gate-level netlists optimized for technology libraries.Supports Verilog input.
@@ -297,7 +302,7 @@ Openlane consists of various tools.Let’s know about openlane_directory
 
 ➢ Go to openlane directory using cd Desktop/work/tools/openlane_working_dir.
 
-**images**
+![pss9](./../Images/Day1_images/Screenshot(9).png)
 
 **openlane_working_dir** consists of three subdirectories:
 
@@ -307,36 +312,42 @@ Openlane consists of various tools.Let’s know about openlane_directory
 
 Pdks directory consits of all the inofrmation related sky130nm technology. We can see three sub directories: 1) sky130A 2)open_pdks 3)skywater_pdk
 
-**images**
+![pss10](./../Images/Day1_images/Screenshot(10).png)
 
 we work with skywater-pdk. This pdk contains all related lef files, .lib files, 
 timing etc.
 
 Now lets go to the sky130A directory
 
-**images**
-**images**
+![pss11](./../Images/Day1_images/Screenshot(11).png)
+
+![pss12](./../Images/Day1_images/Screenshot(12).png)
+
 
 let us see libs.tech
 
 **libs.tech:**
 This directory consists of list of tools used in the openlane.
-**images**
+![pss13](./../Images/Day1_images/Screenshot(13).png)
 
 **libs.ref:**
 it contains all the process specific files with cell , timing etc.
-**images**
+
+![pss14](./../Images/Day1_images/Screenshot(14).png)
 
 ow lets go to the **sky_130_fd_sc_hd** directory. (fd-abbrivieated for foundry, scstandard cell, hd-high density)
 
 ➢ open **sky130_fd_sc_hd** directory and then techlef. 
-**images**
-**images**
+
+![pss9](./../Images/Day1_images/Screenshot(15).png)
+
+![pVirtual_box](./../Images/Day1_images/VirtualBox_VLSI_26_01_2025_14_47_56.png)
 
 techlef files are saved with .tlef extension.
 Now go back to the **openlane_working_directory**. And then open **openlane.**
 
-**images**
+
+![pss17](./../Images/Day1_images/Screenshot(17).png)
 This directory consists of various files related to the openlane flow like 
 configurations, README.md and design examples and many more. 
 
