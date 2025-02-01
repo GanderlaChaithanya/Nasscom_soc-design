@@ -18,7 +18,7 @@ manifestation of the chip's design, created through intricate fabrication proces
 die is housed inside a package to form the complete chip.
 ### **UTILIZATION RATE:**
 It is the ratio of the total cell area (for hard macros and standard cells or soft macro cells) to the core area.
-**images**
+![Utilization_rate](./../images/Day2_images/Utilization_rate.png)
 ### **ASPECT RATIO:**
 aspect ratio refers to the proportional relationship between the 
 height and width of a given region, such as a die, cell, or layout block. It is the ratio of 
@@ -26,9 +26,9 @@ height to the width of chip.
 If the ratio =1( it signifies that chip is in sqaure shape)
 
 other than 1( it signifies that chip is in rectangle shape)
-**images**
+![aspect_ratio](./../images/Day2_images/Aspect_ratio.png)
 since, aspect ratio is 1, the given shape of chip is sqaure.
-**images**
+![example_2_util_aspect](./../images/Day2_images/example_2_util_aspect.png)
 In the given above example, aspect ratio is 0.5. shape of the chip is rectangle
 
 ### **MACRO:**
@@ -46,7 +46,7 @@ validated, ensuring reliability and reducing verification effort. IPs are the ba
 modern VLSI design, enabling innovation, scalability, and faster development cycles in 
 semiconductor technology.Ips are also called preplaced cells. The arrangement of Ips are
 referred as **IP integration**
-**images**
+![macro](./../images/Day2_images/macros.png)
 ### **DIFFERENCE BETWEEN IP AND MACRO:**
 Macros and IPs serve as reusable functional blocks in VLSI design, yet they differ in 
 ownership, licensing, design processes, customization options, and market availability. 
@@ -57,13 +57,13 @@ processes, and are licensable for integration into multiple projects. While macr
 customized to some extent, IPs often offer more configurable options. Despite 
 similarities in functionality, their distinctions lie in their origin, accessibility, and 
 flexibility within the chip design ecosystem.
-**images**
+![floorlan](./../images/Day2_images/block_floorplan.png)
 from above, The Ip blocks have user defined locations and placed in a chip before 
 placement and routing. Hence they are referred to as preplaced cells. The location of 
 preplaced cells are never touched by designers during designing. The preplaced cells are 
 nothing but the ips which are built once and reused. The preplaced cells may be either of
 the given example below.
-**images**
+![ips](./../images/Day2_images/IP_examples.png)
 ### **DECOUPLING CAPACITOR:**
 Decoupling capacitors stabilize the power supply 
 voltage in integrated circuits (ICs) by reducing noise and voltage fluctuations caused by 
@@ -110,7 +110,7 @@ fluctuations and ground bounce.
 #### **5. Proximity to Components:**
 - Place VDD and GND lines as close as possible to the components to 
 minimize parasitic resistance and inductance.
-**images**
+![decoupling_capacitance](./../images/Day2_images/decoupling_capacitance.png)
 ### **PIN PLACEMENT:**
 In VLSI design, "placement" refers to the process of determining the physical locations 
 of various components, such as logic gates, flip-flops, and other circuit elements, on the 
@@ -149,7 +149,7 @@ NOR, or flip-flops, and they come in varying widths and heights based on their d
 strength and functionality. The availability of standard cells in multiple sizes allows 
 designers to select the most appropriate cell for a specific location based on 
 performance, power, and area requirements.
-**images**
+![standardcell_lib](./../images/Day2_images/Standard_cell_library.png)
 The use of smaller cells enables compact placement in regions with limited space or 
 lower performance requirements, optimizing the overall chip area. Conversely, larger 
 cells, which have higher drive strengths, are used in critical paths where timing 
@@ -161,21 +161,27 @@ designers can achieve better utilization of the available area while maintaining
 integrity and meeting design constraints. Ultimately, the availability of standard cells in 
 different sizes enhances the flexibility, efficiency, and performance of the overall chip 
 design.
-**images**
+![examples_of_standard_cells](./../images/Day2_images/Size_of_standard_cell_examples.png)
 For example, consider the following netlist, with various logic elements. 
 
-**images**
+![placement_netlist](./../images/Day2_images/Placement_netlist.png)
+
+
 Let’s take the Standard cells from the library for the elements of above netlist. 
 After the placement we need some placement optimization to make sure that the design 
 is should meet the timing requirement and should not not include any timing violations. 
+
 The design after placement is as follows
-**images**
+
+![placeent_phase](./../images/Day2_images/Placemet_phase.png)
+
 While connectng input ports to the logic cells, it require larger wire length, in which it 
 may cause delay, extra prasistic resistances and capacitances occur, due to that signal 
 integrity will be lost. To avoid that, we place buffers, so that signal integrity will be 
 maintained, and it reduces delay.A buffer is a logic gate that receives an input signal and 
 re-transmits it with minimal delay and minimal distortion.
-**images**
+
+![use_of_buffers](./../images/Day2_images/Use_of_buffers.png)
 ### **LIBRARY:**
 A library of standard cells is a collection of pre-designed, pre-verified 
 building blocks used in digital VLSI design to implement various logic functions, such 
@@ -236,18 +242,19 @@ The characterization flow that is being followed by the Industry is as follows:
 
  All the characterization process is done by the characaterization software GUNA This 
 software will generate Timing, noise and power models.
-**images**
+
+![img46](./../images/Day2_images/img46.png)
 ### **TIMING CHARCATERIZTION:**
 Timing characterization is the process of determining and defining the timing parameters
 of a standard cell, macro, or IP block in a VLSI design. It involves analyzing how the 
 circuit behaves under various operating conditions, such as changes in input signals, 
 supply voltage, temperature, and load capacitance. 
 It has some parameters as shown in the given figure below
-**images**
+![img47](./../images/Day2_images/img47.png)
 Let’s see these timing parameters one by one.
-**images**
-**images**
-**images**
+![img48](./../images/Day2_images/img48.png)
+![img49](./../images/Day2_images/img49.png)
+![img50](./../images/Day2_images/img50.png)
 ### **PROPAGATION DELAY:**
 Propagation delay refers to the time it takes for a signal to 
 travel from the input of a circuit element (such as a logic gate or flip-flop) to its output. 
@@ -262,31 +269,31 @@ should not be negative. In this case, the negative delay is because of poor sele
 threshold points.
 ### **Labs**
 To run floorplan use the command **run_floorplan** in openlane promp
-**images**
+![s_34](./../images/Day2_images/s_34.png)
 After running the floorplan we get output as follows:
-**images**
+![s_40](./../images/Day2_images/s_40.png)
 Now, to have a review at the results and reports, go to the directory, floorplan inside the 
 results directory as shown below. 
 
  Here, we can see a file with a name **picorv32a.floorplan.def** .It is the file, which 
 contains all the information regarding the floorplan
-**images**
+![s_39](./../images/Day2_images/s_39.png)
 
 Now, to can view the floorplan in the tool MAGIC
  For that, run the following command. 
- **images**
+![magic_cmd](./../images/Day2_images/magic_cmd.png)
  Now, you can view your floorplan in magic as follows:
- **images**
+![s_38](./../images/Day2_images/s_38.png)
  you can see tap cell by zooming it. Tap cells are used to avoid latch up conditions. They
 are equidistant.
-**images**
+![s_37](./../images/Day2_images/s_37.png)
 Now, it’s time to run placement in openlane flow.
 
  For this, run the command run_placement as follows 
  After running the above command, you will see as below:
- **images**
+![s_36](./../images/Day2_images/s_36.png)
  you can view in magic layout as follows
- **images**
+![s_35](./../images/Day2_images/s_35.png)
  
 
 
