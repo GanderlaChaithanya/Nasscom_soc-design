@@ -6,7 +6,7 @@
 It is the protective enclosure and interface for an ic providing electrical connections,thermal management,and mechanical support
 Below is QFN-48(quad flat no leads).
 
-![package](./../Images/Day1_images/Package.png)
+![package](./../images/Day1_images/Package.png)
  
 Chip is located inside a package.chip is connected to different pins of package. In 
 package,we have 
@@ -60,9 +60,9 @@ their voltage levels to digital values that the microcontroller can process.
  Output pin for the clock signal from the external crystal oscillator.
 #### **XI (XTAL_IN/OSC_IN):**
  Input pin for the clock signal to the microcontroller from the external crystal oscillator.
-  ![chip_in_package](./../Images/Day1_images/chip_in_package.png)
+  ![chip_in_package](./../images/Day1_images/chip_in_package.png)
  There are also some other components which we need to know:
-  ![pads_die_core](./../Images/Day1_images/pads_die_core.png)
+  ![pads_die_core](./../images/Day1_images/pads_die_core.png)
 #### **Wire bonds:**
 Wire bonds are tiny wires used to connect integrated circuit (IC) chips or semiconductor
 devices to the external leads of the package or to other components on a printed circuit 
@@ -75,7 +75,7 @@ connections between the IC and the rest of the electronic circuit.Wire bonds:
 Wire bonds are tiny wires used to connect integrated circuit (IC) chips or semiconductor
 devices to the external leads of the package or to other components on a printed circuit 
 board (PCB). 
- **IMAGES**
+  ![pwire_bonds](./../images/Day1_images/wire_bonds.png)
 ### **Foundry IPs**
 Foundry IPs are pre-designed and pre-verified functional blocks or modules that are 
 licensed by semiconductor companies for use in their custom IC designs.These IPs are 
@@ -128,7 +128,7 @@ based on the principles of Reduced Instruction Set Computing (RISC). It was deve
 at UC Berkeley and is designed to be simple, modular, and extensible, making it ideal 
 for a wide range of applications, from microcontrollers to supercomputers.
 
-![riscv](./../Images/Day1_images/RISC-V.png)
+![riscv](./../images/Day1_images/RISC-V.png)
 ### **INSTRUCTION SET ARCHITECTURE:**
 An Instruction Set Architecture (ISA) is the interface between hardware and software 
 in a computer system. It defines the set of instructions that a processor can execute and 
@@ -147,7 +147,7 @@ does this happen?
 So,there is an interaction between apps and hardware, i.e system software.
  #### **SYSTEM SOFTWARE:**
  System software converts high level programming language like c,c++,java or python to binary level language which is understand by the hardware 
- ![system_softwarre](./../Images/Day1_images/System_software.png)
+ ![system_softwarre](./../images/Day1_images/System_software.png)
  The major components in system software are 
 - 1.Operating system
 - 2.Compiler
@@ -163,7 +163,7 @@ generates ouptut.
 So, in general, The Instruction set Architecture is fed to the assembler through RISC-V 
 assembly language. We write a RTL(Register Transfer level) snippet which understands 
 instructions. Then we get a netlist for given RTL. It is implemented to hardware.
-![risc_flow](./../Images/Day1_images/RISC_flow.png)
+![risc_flow](./../images/Day1_images/RISC_flow.png)
   ### **SOC:**
 A System on chip(S0C) is an integrated circuit that consolidates multiple components of a complete 
 system into a single chip. It typically includes Processor, memory, input/output interfaces,specialized 
@@ -171,7 +171,7 @@ modules,power management. Soc optmize power,size and performance,making them ide
 and energy efficient deisgns.
  ### **SOC DESIGN FLOW:**
 SOC design flow involves several stages to develop a complete system on a chip.Here’s a brief overview 
-![aoc_design_flow](./../Images/Day1_images/SOC_design_flow.png)
+![aoc_design_flow](./../images/Day1_images/SOC_design_flow.png)
 ### **ASIC DESIGN FLOW:**
 The ASIC (Application-Specific Integrated Circuit) Design Flow is the step-by-step 
 process of designing and fabricating an ASIC .
@@ -179,7 +179,7 @@ They require three important key components:
 1. Register Transfer level Intellectual properties.
 2. Electronic design automation tools.
 3. Process design kit Data
-![pasic_design_flow](./../Images/Day1_images/ASIC_design_flow.png)
+![pasic_design_flow](./../images/Day1_images/ASIC_design_flow.png)
 ### **RTL IP’S:**
 RTL IPs (Register-Transfer Level Intellectual Properties) are reusable pre-designed 
 hardware components described in an HDL (e.g., Verilog, VHDL). They represent 
@@ -199,10 +199,10 @@ It acts as a interface between fabrication units and designers.
 The key components of PDK are design rules,technology files,standard cell libraries, 
 SPICE models etc.
 ### **DESIGN FLOW**
-![ASIC_](./../Images/Day1_images/asic.png)
+![ASIC_](./../images/Day1_images/asic.png)
  ### **INTRODUCTION TO OPENLANE AND STRIVE SOC FAMILY**
  Strive is a family of open everything. For example like open pdk, open eda, open rtl
- ![pstrive](./../Images/Day1_images/Strive.png)
+ ![pstrive](./../images/Day1_images/Strive.png)
  ### **OPENLANE:**
 OpenLane is an open-source, fully automated RTL-to-GDSII (Register Transfer Level 
 to Graphic Database System II) flow for digital ASIC design. It is a part of the 
@@ -228,7 +228,7 @@ customize individual steps as needed.In this mode, designers interact with OpenL
 via a command-line interface (CLI) to execute specific stages of the flow manually. 
 Openlane has the best of flow configuration. They have 43 best design configuration
 ### **Tools used in openlane flow:**
-![Openlane_flow](./../Images/Day1_images/Openlane_flow.png)
+![Openlane_flow](./../images/Day1_images/Openlane_flow.png)
  
 ### **YOSYS:**
 Yosys is an open-source framework for Verilog synthesis. It converts high level RTL descriptions into gate-level netlists optimized for technology libraries.Supports Verilog input.
@@ -302,7 +302,7 @@ Openlane consists of various tools.Let’s know about openlane_directory
 
 ➢ Go to openlane directory using cd Desktop/work/tools/openlane_working_dir.
 
-![pss9](./../Images/Day1_images/Screenshot(9).png)
+![pss9](./../images/Day1_images/s_9.png)
 
 **openlane_working_dir** consists of three subdirectories:
 
@@ -312,42 +312,43 @@ Openlane consists of various tools.Let’s know about openlane_directory
 
 Pdks directory consits of all the inofrmation related sky130nm technology. We can see three sub directories: 1) sky130A 2)open_pdks 3)skywater_pdk
 
-![pss10](./../Images/Day1_images/Screenshot(10).png)
+![pss10](./../images/Day1_images/s_11.png)
 
 we work with skywater-pdk. This pdk contains all related lef files, .lib files, 
 timing etc.
 
 Now lets go to the sky130A directory
 
-![pss11](./../Images/Day1_images/Screenshot(11).png)
+![pss11](./../images/Day1_images/s_10.png)
 
-![pss12](./../Images/Day1_images/Screenshot(12).png)
+
 
 
 let us see libs.tech
 
 **libs.tech:**
 This directory consists of list of tools used in the openlane.
-![pss13](./../Images/Day1_images/Screenshot(13).png)
+![pss13](./../images/Day1_images/s_12.png)
 
 **libs.ref:**
 it contains all the process specific files with cell , timing etc.
+![s_29](./../images/Day1_images/s_13.png)
 
-![pss14](./../Images/Day1_images/Screenshot(14).png)
 
-ow lets go to the **sky_130_fd_sc_hd** directory. (fd-abbrivieated for foundry, scstandard cell, hd-high density)
+ow lets go to the **sky_130_fd_sc_hd** directory. (fd-abbrivieated for foundry, sc-standard cell, hd-high density)
+![pss14](./../images/Day1_images/s_14.png)
 
 ➢ open **sky130_fd_sc_hd** directory and then techlef. 
 
-![pss9](./../Images/Day1_images/Screenshot(15).png)
+![pss9](./../images/Day1_images/s_16.png)
 
-![pVirtual_box](./../Images/Day1_images/VirtualBox_VLSI_26_01_2025_14_47_56.png)
+![pVirtual_box](./../images/Day1_images/VirtualBox_VLSI_26_01_2025_14_47_56.png)
 
 techlef files are saved with .tlef extension.
 Now go back to the **openlane_working_directory**. And then open **openlane.**
 
 
-![pss17](./../Images/Day1_images/Screenshot(17).png)
+![pss17](./../images/Day1_images/s_17.png)
 This directory consists of various files related to the openlane flow like 
 configurations, README.md and design examples and many more. 
 
@@ -358,9 +359,9 @@ openlane and also some new designs are going to be added later.
  In these examples, we are going to work with the design picorv32a.
  Navigate to the picorv32a directory.
  
- **images**
+ ![desktop](./../images/Day1_images/des.png)
  
- **images**
+ ![pico](./../images/Day1_images/cd_pico.png)
  
 Here we can see different files inlcuding config.tcl and src.
 
@@ -373,27 +374,27 @@ technology-specific details such as the chosen technology node, library paths, a
 cell specifications necessary for the design process. 
 
  Now, go to the src directory as shown below:
- **images**
+ ![src](./../images/Day1_images/cd_src.png)
  Here, we can see the important files related to the design.
  - picorv32a.v : It consists the rtl hardware description of the design. 
 - picorv32a.sdc: It contains the variois design constraints like timing constraints, 
 input, output constraints etc. 
  Now, run the below command, to read the README.md file
-**images**
-  **images**
+![readme](./../images/Day1_images/cd_readme.png)
+ ![read](./../images/Day1_images/readme.png)
   This file contains Various parameters about OPENLANE design flow, openlane 
 directory structure and various commands used in the openlane flow both in 
 Interactive and Autonomous flow.
 
  Now, go back to the openlane directory, now go to the configuration directory
- **images**
+ ![configuration](./../images/Day1_images/cd_configuration.png)
  here we have all the tcl files, which are essential in executing openlane flow.
 Now lets us know how to open openlane prompt.
 
 ➔ Open the directory openlane
 
 ➔ type docker to launch openlane as below
- **images**
+ ![v5](./../images/Day1_images/v5.png)
  after that, type ./flow.tcl -interactive so that it starts in interactive mode, we can 
 see the results and reports in each step.
 
@@ -402,7 +403,7 @@ see the results and reports in each step.
 ➔ for that type package require openlane 0.9
 
 ➔ and then type prep -design picorv32a 
-**images**
+![v11](./../images/Day1_images/v11.png)
 In this case the lef and tlef are merged and formed as a single file that is 
 merged .lef 
 
@@ -416,7 +417,7 @@ started
 Now to check, go to designs directory and then go to picorv32a directory.
 In that go runs directory. You can see the design you have created.
 
-**images**
+![s_22](./../images/Day1_images/s_22.png)
 Now open the directory you see. You can see different directories like tmp, reports
 and results are created. 
 
@@ -430,24 +431,25 @@ Here you can see another config.tcl file. This file contains the information abo
 which design parameters are taken. And in this file, we can know, whether the 
 proper execution of every process in Openlane flow, is happenning or not
 
-**images**
+![v12](./../images/Day1_images/v12.png)
 Now go to the tmp directory.
 
 Here, we can see the merged.lef file, which contains the design parameters like 
 default units for resistance, capacitance etc. 
 
-**images**
+![s24](./../images/Day1_images/s_24.png)
 Now you can go to the reports directory. You can see all the reports for synthesis, 
 floorplan,placement etc.
 
 now lets us see config.tcl present in the directory that you have created
 
-**images**
-**images**
+![s25](./../images/Day1_images/s_25.png)
+
+![s_26](./../images/Day1_images/s_26.png)
 
 also let us see sky130A_sky130_fd_fc_hd_config.tcl 
 
-**images**
+![s27](./../images/Day1_images/s_27.png)
 
 There is an order of precendence in openlane to take the values regarding the 
 design requirements.
@@ -462,19 +464,19 @@ default values are of lowest precendence.
  Now, let’s go to the openlane prompt, and run synthesis using run_synthesis and
 we get this 
 
-**images**
+![v18](./../images/Day1_images/v18.png)
 
 Now, lets have the reports and results.
 
 In results, go to the synthesis directory.we can see **picorv32a.synthesis.v.**
 
-**images**
+![s_28](./../images/Day1_images/s_28.png)
 
-**images**
+![s_29](./../images/Day1_images/s_29.png)
 
 Here, you can see, various reports are generated. Out of these, **1-yosys_4.stat.rpt** 
 is the original report of the synthesis process 
-**images**
-**images**
+![s_30](./../images/Day1_images/s_30.png)
+![s_33](./../images/Day1_images/s_33.png)
 Now we can know the flipflop ratio: (number of d flip flopcells)/(number of cells)
 flip flop ratio=1613/14876=0.108
