@@ -1,7 +1,7 @@
 # SKY130_DAY3: DESIGN LIBRARY CELL USING MAGIC LAYOUT AND NGSPICE CHARACTERIZATION
 ### **SPICE DECK CREATION FOR CMOS INVERTER:**
 SPICE deck refers to a text file written in SPICE (Simulation Program with Integrated Circuit Emphasis) syntax that describes the electrical behaviour of an integrated circuit (IC) component or a circuit net list A spice deck creation needs some information about the Component connectivity, it’s values and values for the nodes and it’s name.
-**images**
+![img52](./../images/Day2_images/img52.png)
 There is a specific syntax for the Spice deck creation.
 
  The syntax for connectivity information for MOSFET is MOSFET name (like M1 or M2), DRAIN, GATE, Source, Substrate, type of MOSFET (PMOS or NMOS), width, length. 
