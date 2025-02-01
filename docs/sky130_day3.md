@@ -279,8 +279,8 @@ To simulate the .spice file use ngpsice. Use the command ngspice sky130_inv.spic
  The output waveforms are as follows
 ![v44](./../images/Day3_images/v44.png)
  ### **TIMING CHARCTERIZATION:**
- **images**
- **images**
+![v46](./../images/Day3_images/v46.png)
+![v47](./../images/Day3_images/v47.png)
 ### **RISE TIME:**
 Time taken for a output waveform 20% to 80% of max value vdd.
 2.19307ns -2.142ns =0.05107ns
@@ -289,38 +289,38 @@ similarly we can calculate fall time.
 
 ### **TRACKS. INFO:**
 . A track is a virtual horizontal or vertical line on the metal layers of a chip that serves as a guide for placing and routing wires (interconnects) during physical design. Tracks are defined by their pitch, which is the distance between two adjacent tracks, and are a crucial component in standard cell placement and routing optimization
-**images**
+![v50](./../images/Day3_images/v50.png)
 Now, we have to make use of the li1 layer dimensions to convert tracks info to grid info as follows 
  in tckon.tcl, type grid 0.46um 0.34um 0.23um 0.17um. We get the output as follows:
- **images**
+![v52](./../images/Day3_images/v52_tracks.png)
 ###  **LAB INTRODUCTION TO MAGIC AND STEPS TO LOAD SKY130 TECH RULES:**
 
 Now, in this session, we will some osme of the DRC rules of sky130 tech. 
  For that, first we have to install a zip file. 
  The link for zip file is  http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
  after opening drc tests directory, we can see number of .mag files.
- **images**
+![v61](./../images/Day3_images/v61.png)
  Now lets open met3.mag , it can viewed as follows:
- **images**
- **images**
+ ![v44](./../images/Day3_images/v62.png)
+ ![v44](./../images/Day3_images/img80.png)
  ### **LAB EXERCISE TO FIX POLY.9 ERROR:**
 The "poly.9" error encountered in Magic layout typically points to an issue with the polygon layer within the layout file. In Magic, layers are often denoted by their corresponding technology layers, with "poly" usually representing the polysilicon layer used for gates and interconnections. The "9" likely refers to a specific polygon or layer number within this polysilicon layer stack 
 drc errors for the above are:
- **images**
- **images**
+![v63](./../images/Day3_images/v63.png)
+![v67](./../images/Day3_images/v67.png)
  drc errors for the above are:
-  **images**
-  **images**
+ ![v68](./../images/Day3_images/v68.png)
+ ![v71](./../images/Day3_images/v71.png)
   ### **LAB EXERCISE TO DESCRIBE DRC ERROR AS GEOMETRICAL CONSTRUCT.**
-   **images**
-  **images**
+ ![feed_clear](./../images/Day3_images/drc_feed_clear.png)
+ ![vdrc](./../images/Day3_images/vdrc1.png)
  ### ** LAB CHALLANGE TO FIND MISSING OR INCORRECT RULES AND FIX THEM:
-  **images**
+![in1](./../images/Day3_images/in1.png)
   Here we got an error after placing an nsubstratecontact.
 Now we are going to edit sky130A.tech to fix the incorrect implementation
-   **images**
-    **images**
-      **images**
+ ![IN3](./../images/Day3_images/IN3.png)
+ ![IN4](./../images/Day3_images/IN4.png)
+ ![IN5](./../images/Day3_images/IN5.png)
    
 
                                                                    
