@@ -1,4 +1,4 @@
-# SKY130A_DAY4:PRELAYOUT TIMING ANALYSIS AND IMPORTANCE OF GOOD CLOCK TREE.
+# Sky130A_Day4:Prelayout Timing analysis and Importance of Good clock Tree.
 
 
 ### **POWER AWARE CTS:**
