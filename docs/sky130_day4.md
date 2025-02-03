@@ -122,21 +122,102 @@ after that, we can see as follows:
 ![day3_lab_synthesis](./../images/Day4_images/day3_lab_synthesis.png)
 
 now for running for floorplan use commands:
+[day3_floorplan](./../images/Day4_images/day3_floorplan.png)
+
+- now after floorplanning we can see merged.lef
+- ![merged_lef](./../images/Day4_images/after_fp_merged_lef.png)
+
+  after run placement
+  - ![run_placement](./../images/Day4_images/run_placement.png)
+
+we can view in magic
+  ![placement_magic](./../images/Day4_images/placement_magic.png)
+
+ in that we can see our newly placed sky130_vsd_inv,here i just showed an example of nand3:
+ ![general_example_nand3](./../images/Day4_images/general_example_nand3.png)
+
+ let us write pre_sta.conf for sta_anlysis
+  ![pre_sta_conf](./../images/Day4_images/pre_sta_conf.png)
+to run sta type the command **sta pre_sta.conf**
+   ![labs_for_sta](./../images/Day4_images/labs_for_sta.png)
+
+to remove slack type the following command
+
+ ![to_remove_slack](./../images/Day4_images/to_remove_slack.png)
+
+now slack changed to tns to zero
+
+ ![run_synthesis_after](./../images/Day4_images/run_synthesis_after.png)
+
+ now run cts using following command:
  
+  ![cts_using_triton](./../images/Day4_images/cts_using_triton.png)
+
+  lets us see cts_readme file
+  
+   ![cts_readme](./../images/Day4_images/cts_readme.png)
+
+ let us see cts_procs
+  ![cts_procs](./../images/Day4_images/cts_procs.png)
+
+cts_results are given below:
+
+ ![cts_results](./../images/Day4_images/cts_results.png)
+
+ Now lets go to the openroad directory
+ 
+  ![cd_openroad](./../images/Day4_images/cd_openroad.png)
+
+lets us or_cts.tcl
 
 
+![or_cts_tcl](./../images/Day4_images/or_cts_tcl.png)
 
+let us check all the variables
 
+![env_varaibles](./../images/Day4_images/env_varaibles.png)
 
+let us check the capacitance of buffer_16
 
+![max_cap_buf_16](./../images/Day4_images/max_cap_buf_16.png)
 
+#### **Starting Openroad_flow**
 
+let us write db file which is done by both lef file and def file
+![open_road_flow](./../images/Day4_images/open_road_flow.png)
 
+reading liberty files
 
+![liberty](./../images/Day4_images/liberty.png)
 
+let us see report checks
+![report_checks](./../images/Day4_images/report_checks.png)
 
+we get a slack as below, which is not correct
+![incorrect_slack](./../images/Day4_images/slack_met.png)
 
+to get new slack, do the following steps:
+![to_get_new_slack](./../images/Day4_images/to_get_new_slack.png)
 
+we get slack as below
+![new_slack](./../images/Day4_images/new_slack.png)
+
+let us check what happens to the slack after removing buffers.
+so,to remove buffers use the following command
+![remove_buffers](./../images/Day4_images/to_replace_buffers.png)
+we can observe there is no buffer 1
+![no_buffer1](./../images/Day4_images/no_buffer1.png)
+
+the obtained slack is
+
+![slack_after_remove_buffers](./../images/Day4_images/slack_after_remove_buffers.png)
+let us check hold and setup reports
+
+![set up_and_hold_reports](./../images/Day4_images/set_up_and_hold_reports.png)
+again to readd the buffer use the commands
+![adding_buffer1](./../images/Day4_images/adding_buffers.png)
+let us see the image after_cts
+![after_cts](./../images/Day4_images/after_cts.png)
 
 
 
