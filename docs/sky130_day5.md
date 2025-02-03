@@ -1,5 +1,5 @@
 
-# Sky130_Day5:FINAL STEPS FOR RTL2GDS USING TRITON ROUTE AND OPEN STA 
+# Sky130_Day5:Final Steps for RTL2GDS Using Triton route AND Open Sta 
 
 ### **ROUTING:**
 
