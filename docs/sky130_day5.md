@@ -78,6 +78,7 @@ By preprocessing route guides, TritonRoute enhances routing accuracy, reduces DR
 
 Inter-Guide Connectivity refers to the process of ensuring that adjacent or overlapping route guides—regions that indicate where nets should be routed—are properly connected during the detailed routing phase in VLSI design. Route guides are initially provided by a global router to guide the detailed router, and inter-guide connectivity ensures that these guides are continuous and form valid, uninterrupted paths for signal routing. 
 
+
 ![img117](./../images/Day5_images/img120.png)
 
 ### **Intra-Layer Parallel Routing :**
@@ -87,6 +88,7 @@ Intra-layer parallel routing refers to the process of routing multiple nets simu
 Inter-layer sequential panel routing involves routing connections across multiple layers in a sequential manner, typically moving from one layer to the next as the routing progresses. This method is used when routing requires vertical transitions, such as moving between metal layers using vias. It prioritizes the orderly completion of routes in one layer before progressing to the next, which helps maintain clarity and minimizes conflicts between layers. Inter-layer sequential panel routing is crucial in multi-layer designs where the vertical dimension (z-axis) is extensively used to reduce congestion on individual layers and achieve routing closure while adhering to design rules for vias, spacing, and layer usage.
 
 Both methods are complementary and are used together in modern routing tools to achieve high-quality layouts in complex designs.
+
 ![img117](./../images/Day5_images/img121.png)
 
 ![img117](./../images/Day5_images/img122.png)
@@ -102,4 +104,24 @@ Let’s see how, trintonroute handles the process of routing and what are the pa
 ![img117](./../images/Day5_images/img125.png)
 
 ### LABS:
+- To generate power_delivery_network use the command **gen_pdn** command
+  
+![gen_pdn](./../images/Day5_images/gen_pdn.png)
+
+- after generating pdn and now let's run routing using **run_routing**
+- after we get output as following.
+  ![routing](./../images/Day5_images/routing.png)
+  - spef file will be also be generated
+    
+   ![spef](./../images/Day5_images/routing.png)
+
+  let us see std_rails:
+   ![std_rails](./../images/Day5_images/std_rails.png)
+
+  - after routing we can see picorv32a
+    ![after_routing](./../images/Day5_images/after_routing.png)
+    
+  
+
+  
 
