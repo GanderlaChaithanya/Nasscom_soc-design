@@ -98,4 +98,8 @@ Let’s see how, trintonroute handles the process of routing and what are the pa
 ### **Routing topology algorithm:**
 
  Routing topology algorithms aim to find the optimal arrangement of routing paths between components while adhering to design rules, constraints, and optimization objectives. They play a crucial role in determining the overall efficiency, performance, and manufacturability 
+ 
 ![img117](./../images/Day5_images/img125.png)
+
+### LABS:
+
