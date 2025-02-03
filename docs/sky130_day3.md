@@ -1,4 +1,4 @@
-# SKY130_DAY3: DESIGN LIBRARY CELL USING MAGIC LAYOUT AND NGSPICE CHARACTERIZATION
+# Sky130A_Day3: Design Library cell using Magic Layout and Ngspice characterization
 ### **SPICE DECK CREATION FOR CMOS INVERTER:**
 SPICE deck refers to a text file written in SPICE (Simulation Program with Integrated Circuit Emphasis) syntax that describes the electrical behaviour of an integrated circuit (IC) component or a circuit net list A spice deck creation needs some information about the Component connectivity, it’s values and values for the nodes and it’s name.
 ![img52](./../images/Day3_images/img52.png)
