@@ -51,7 +51,7 @@ We have to optimize the layout, to maintain a  minimum wire pitch.
 Parasitic Extraction is the process of identifying and quantifying the parasitic effects—such as resistance, capacitance, and sometimes inductance—present in a chip's physical layout. These parasitics arise due to the interconnects (wires, vias) and their interactions with surrounding materials, especially as technology scales down to nanometer nodes. Parasitic resistance can lead to voltage drops, increased power dissipation, and degraded signal strength, while parasitic capacitance can cause delays, increased power consumption, and signal coupling issues, adversely impacting the circuit's speed and reliability. The extracted parasitics are critical for accurate post-layout simulations to evaluate the circuit's real-world performance, including timing, power, and signal integrity. 
 
 
-![Parasistic_extraction](./../images/Day5_images/Parisitic_extraction.png)
+![Parasistic_extraction](./../images/Day5_images/Parasitic_extraction.png)
 ### **TRITON ROUTE:**
 
 ![img117](./../images/Day5_images/img117.png)
