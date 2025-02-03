@@ -112,3 +112,6 @@ After the process of clock net shielding, the layout we can see is as follows:
 
 ![final_placement](./../images/Day4_images/final_placement_with_cts.png)
 
+### LABS:
+
+
