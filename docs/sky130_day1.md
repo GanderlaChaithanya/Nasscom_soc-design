@@ -352,11 +352,11 @@ Now go back to the **openlane_working_directory**. And then open **openlane.**
 This directory consists of various files related to the openlane flow like 
 configurations, README.md and design examples and many more. 
 
- Now, go to the designs directory. 
- Here, we will see different design examples, which are already present in 
+- Now, go to the designs directory. 
+- Here, we will see different design examples, which are already present in 
 openlane and also some new designs are going to be added later. 
 
- In these examples, we are going to work with the design picorv32a.
+- In these examples, we are going to work with the design picorv32a.
  Navigate to the picorv32a directory.
  
  ![desktop](./../images/Day1_images/des.png)
@@ -365,7 +365,7 @@ openlane and also some new designs are going to be added later.
  
 Here we can see different files inlcuding config.tcl and src.
 
- **config.tcl** : Then config.tcl file containsTcl (Tool Command Language) 
+ **config.tcl** : Then config.tcl file containsTcl (Tool Command Language) 
 commands that define various settings and parameters crucial for executing the 
 Openlane flow tailored to a specific design project. Within this file, essential 
 design parameters such as the project name, file paths, clock frequency targets, 
@@ -373,13 +373,13 @@ and environmental conditions are typically specified. Additionally, it houses
 technology-specific details such as the chosen technology node, library paths, and 
 cell specifications necessary for the design process. 
 
- Now, go to the src directory as shown below:
+- Now, go to the src directory as shown below:
  ![src](./../images/Day1_images/cd_src.png)
  Here, we can see the important files related to the design.
  - picorv32a.v : It consists the rtl hardware description of the design. 
 - picorv32a.sdc: It contains the variois design constraints like timing constraints, 
 input, output constraints etc. 
- Now, run the below command, to read the README.md file
+- Now, run the below command, to read the README.md file
 ![readme](./../images/Day1_images/cd_readme.png)
  ![read](./../images/Day1_images/readme.png)
   This file contains Various parameters about OPENLANE design flow, openlane 
