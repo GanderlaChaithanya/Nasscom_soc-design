@@ -1,12 +1,8 @@
 # Nasscom_Vsd_Soc_design
-This is a 5 day workshop on **Digital vlsi design and soc planning** where we can learn how to use opensource eda tools using sky130nm technology.This course covers the complete design process from logic synthesis to layout generation."
+This is a 5 day workshop on **Digital vlsi design and soc planning** where we can learn how to use opensource eda tools using sky130nm technology.This course covers the complete design process from logic synthesis to layout generation.
+The **PicoRV32A chip** is a compact and efficient **RISC-V** based soft-core processor, designed for FPGA and ASIC implementations. It is an extension of the PicoRV32 processor, optimized for area and power efficiency while maintaining flexibility for various applications. The RTL-to-GDS flow of the PicoRV32A chip follows a standard ASIC design methodology using **OpenLane**, an open-source EDA toolchain. The process begins with **Register Transfer Level (RTL)** design, which is synthesized into a gate-level netlist. This is followed by **floorplanning, placement, clock tree synthesis (CTS), routing, and Design Rule Check (DRC)/Layout Versus Schematic (LVS) verification** to ensure manufacturability. The final step generates the **GDSII layout**, which can be fabricated using the **SKY130 process node**, making it suitable for open-source silicon projects.
 ## Table of contents
-- [Sky130_Day1: Inception of Open-source EDA, OpenLane, and Sky130 PDK](#sky130_day1-inception-of-open-source-eda-openlane-and-sky130-pdk)  
-- [Sky130_Day2: Good Floorplan vs Bad Floorplan & Introduction to Library Cells](#sky130_day2-good-floorplan-vs-bad-floorplan--introduction-to-library-cells)
--  [Sky130_Day3: Design Library Cell using Magic Layout & NGSpice Characterization](#sky130_day3-design-library-cell-using-magic-layout--ngspice-characterization)  
-- [Sky130_Day4: Pre-layout Timing Analysis & Importance of Good Clock Tree](#sky130_day4-pre-layout-timing-analysis--importance-of-good-clock-tree)  
-- [Sky130_Day5: Final Steps for RTL2GDS using TritonRoute & OpenSTA](#sky130_day5-final-steps-for-rtl2gds-using-tritonroute--opensta)  
-  
+
 
 ---
 
