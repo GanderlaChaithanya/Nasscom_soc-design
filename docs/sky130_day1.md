@@ -75,7 +75,7 @@ connections between the IC and the rest of the electronic circuit.Wire bonds:
 Wire bonds are tiny wires used to connect integrated circuit (IC) chips or semiconductor
 devices to the external leads of the package or to other components on a printed circuit 
 board (PCB). 
-  ![pwire_bonds](./../images/Day1_images/wire_bonds.png)
+ ![pwire_bonds](./../images/Day1_images/wire_bonds.png)
 ### **Foundry IPs**
 Foundry IPs are pre-designed and pre-verified functional blocks or modules that are 
 licensed by semiconductor companies for use in their custom IC designs.These IPs are 
