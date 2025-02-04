@@ -150,6 +150,7 @@ strength and functionality. The availability of standard cells in multiple sizes
 designers to select the most appropriate cell for a specific location based on 
 performance, power, and area requirements.
 ![standardcell_lib](./../images/Day2_images/Standard_cell_library.png)
+
 The use of smaller cells enables compact placement in regions with limited space or 
 lower performance requirements, optimizing the overall chip area. Conversely, larger 
 cells, which have higher drive strengths, are used in critical paths where timing 
