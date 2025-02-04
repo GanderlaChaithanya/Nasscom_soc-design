@@ -136,7 +136,8 @@ we can view in magic
   ![placement_magic](./../images/Day4_images/placement_magic.png)
 
  in that we can see our newly placed sky130_vsd_inv,here i just showed an example of nand3:
- ![general_example_nand3](./../images/Day4_images/general_example_nand3.png)
+ 
+ ![general_example_nand3](./../images/Day4_images/genral_example_nand3.png)
 
  let us write pre_sta.conf for sta_anlysis
   ![pre_sta_conf](./../images/Day4_images/pre_sta_conf.png)
