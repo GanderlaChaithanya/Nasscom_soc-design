@@ -1,4 +1,4 @@
-# SKY_L1: Introduction to QFN-48 Package, Chip, Pads, Core, Die, and IP
+# Sky130_Day1: Introduction to QFN-48 Package, Chip, Pads, Core, Die, and IP
 
 ## Understanding the Chip Inside a Microcontroller
 
