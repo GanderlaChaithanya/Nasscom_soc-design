@@ -122,7 +122,9 @@ after that, we can see as follows:
 ![day3_lab_synthesis](./../images/Day4_images/day3_lab_synthesis.png)
 
 now for running for floorplan use commands:
-[day3_floorplan](./../images/Day4_images/day3_floorplan.png)
+
+![day3_lab_synthesis](./../images/Day4_images/day3_floorplan.png)
+
 
 - now after floorplanning we can see merged.lef
 - ![merged_lef](./../images/Day4_images/after_fp_merged_lef.png)
