@@ -32,3 +32,17 @@ This is a 5 day workshop on **Digital vlsi design and soc planning** where we ca
 
 ## Sky130_Day5: Final Steps for RTL2GDS using TritonRoute & OpenSTA  
 [📄 Go to full document](docs/sky130_day5.md)  
+
+
+
+
+
+## Acknowledgments
+
+I would like to express my sincere gratitude to **Kunal Ghosh** for his invaluable guidance and mentorship throughout the development of the **Picorv32A chip**. His insights and support were instrumental in the successful completion of this project.
+
+I also extend my appreciation to the **NASSCOM VSD SoC Design Program** for providing a structured learning environment and resources that made this project possible.
+
+A special thanks to the **OpenLane** tool developers and the open-source community for their contributions, which played a crucial role in the design and implementation process.
+
+Finally, I acknowledge everyone who supported and contributed directly or indirectly to this project.
