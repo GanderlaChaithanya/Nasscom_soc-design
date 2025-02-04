@@ -20,6 +20,7 @@ Design Rule Checks (DRC) are a set of rules used in VLSI design to ensure that a
 ![maze_routing](./../images/Day5_images/maze_routing.png)
 
 ![routed_using_maze_routing](./../images/Day5_images/routed_using_maze_routing_algorithm.png)
+
 There are so many design rules that should be followed as a part of routing process. Also, there are some typical rules, that should must follow while routing is going on. 
 
 - Wire width
@@ -111,15 +112,15 @@ Let’s see how, trintonroute handles the process of routing and what are the pa
 - after generating pdn and now let's run routing using **run_routing**
 - after we get output as following.
   ![routing](./../images/Day5_images/routing.png)
-  - spef file will be also be generated
+- spef file will be also be generated
     
-   ![spef](./../images/Day5_images/routing.png)
+ ![spef](./../images/Day5_images/routing.png)
 
-  let us see std_rails:
-   ![std_rails](./../images/Day5_images/std_rails.png)
-
-  - after routing we can see picorv32a
-    ![after_routing](./../images/Day5_images/after_routing.png)
+ let us see std_rails:
+ ![std_rails](./../images/Day5_images/std_rails.png)
+- after routing we can see picorv32a
+- 
+![after_routing](./../images/Day5_images/after_routing.png)
     
   
 
