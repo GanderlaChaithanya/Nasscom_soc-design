@@ -61,7 +61,9 @@ their voltage levels to digital values that the microcontroller can process.
 #### **XI (XTAL_IN/OSC_IN):**
  Input pin for the clock signal to the microcontroller from the external crystal oscillator.
   ![chip_in_package](./../images/Day1_images/chip_in_package.png)
+  
  There are also some other components which we need to know:
+ 
   ![pads_die_core](./../images/Day1_images/pads_die_core.png)
 #### **Wire bonds:**
 Wire bonds are tiny wires used to connect integrated circuit (IC) chips or semiconductor
@@ -74,7 +76,10 @@ the package.They provide a means for transmitting electrical signals, power, and
 connections between the IC and the rest of the electronic circuit.Wire bonds:
 Wire bonds are tiny wires used to connect integrated circuit (IC) chips or semiconductor
 devices to the external leads of the package or to other components on a printed circuit 
-board (PCB). 
+board(PCB). 
+
+
+
  ![pwire_bonds](./../images/Day1_images/wire_bonds.png)
 ### **Foundry IPs**
 Foundry IPs are pre-designed and pre-verified functional blocks or modules that are 
