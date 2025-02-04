@@ -119,7 +119,7 @@ Let’s see how, trintonroute handles the process of routing and what are the pa
  let us see std_rails:
  ![std_rails](./../images/Day5_images/std_rails.png)
 - after routing we can see picorv32a
-- 
+  
 ![after_routing](./../images/Day5_images/after_routing.png)
     
   
