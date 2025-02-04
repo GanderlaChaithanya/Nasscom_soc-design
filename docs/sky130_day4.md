@@ -126,12 +126,11 @@ now for running for floorplan use commands:
 
 ![day3_lab_synthesis](./../images/Day4_images/day3_floorplan.png)
 
+now after floorplanning we can see merged.lef
+![merged_lef](./../images/Day4_images/after_fp_merged_lef.png)
 
-- now after floorplanning we can see merged.lef
-- ![merged_lef](./../images/Day4_images/after_fp_merged_lef.png)
-
-  after run placement
-  - ![run_placement](./../images/Day4_images/run_placement.png)
+ after run placement
+  ![run_placement](./../images/Day4_images/run_placement.png)
 
 we can view in magic
   ![placement_magic](./../images/Day4_images/placement_magic.png)
