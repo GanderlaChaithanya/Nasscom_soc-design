@@ -19,23 +19,23 @@ we will sweep the voltage at the input from 0 -2.5V with the step size of 0.05. 
 ### **Spice simulation for CMOS Inverter:**
 The Spice simulations are processed in ngspice. “ngspice” is an open-source electronic circuit simulator based on the SPICE (Simulation Program with Integrated Circuit Emphasis) simulation engine. It stands for "Next Generation SPICE." ngspice is widely used in VLSI (Very Large Scale Integration) design for simulating and verifying the behaviour of electronic circuits at the transistor level. The steps to follow for SPICE simulation 
 
- Go to ngspice. 
+- Go to ngspice. 
 
- Change the directory (where the related files kept). 
+- Change the directory (where the related files kept). 
 
- Source the circuit file. it says the now the circuit is present in the ngspice simulator.
+- Source the circuit file. it says the now the circuit is present in the ngspice simulator.
 
- To execute the circuit, the command is run.
+- To execute the circuit, the command is run.
 
-  Give command setplot --> it will show which plots are currently available in the simulator.
+ - Give command setplot --> it will show which plots are currently available in the simulator.
  
-  Select the plot. Give command name as that plot name. 
+ - Select the plot. Give command name as that plot name. 
 
-  Give display command to see which nodes are available.
+ - Give display command to see which nodes are available.
  
-  To plot the graph give command plot out vs in. 
+ - To plot the graph give command plot out vs in. 
  
-  We can see the plot for above inputs. In this the width of both PMOS & NMOS is same.  
+ - We can see the plot for above inputs. In this the width of both PMOS & NMOS is same.  
  
 ![img56](./../images/Day3_images/img56.png)
 
@@ -226,17 +226,17 @@ Now, mask 15 is used to make the second level of interconnection. Nd after formi
 
 ### Lab steps to make a CMOS inverter(Standard cell): 
 
- In this case we are not building the CMOS inverter form scratch, but we are using the existing design for checking furthur parameters related to building a standard cell. 
+- In this case we are not building the CMOS inverter form scratch, but we are using the existing design for checking furthur parameters related to building a standard cell. 
 
- Now, we are taking Inverter design the github from the link as mentioned below.   
-  • https://github.com/nickson-jose/vsdstdcelldesign.git 
+- Now, we are taking Inverter design the github from the link as mentioned below.   
+  - https://github.com/nickson-jose/vsdstdcelldesign.git 
   
- To clone the gitlink, first go to the openlane directory, then run the following
- • git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+- To clone the gitlink, first go to the openlane directory, then run the following
+  - git clone https://github.com/nickson-jose/vsdstdcelldesign.git
  
- Now, we will get a folder which contains all dependencies and requirements for the Standard cell.
+- Now, we will get a folder which contains all dependencies and requirements for the Standard cell.
 
-  Now, go to the newly created directory in openlane directory, which contains inverter design. 
+ - Now, go to the newly created directory in openlane directory, which contains inverter design. 
  
  Now, run the following command to view the Layot of the CMOS inverter in MAGIC 
 magic -T sky130a.tech sky130_inv.mag &
@@ -244,13 +244,13 @@ magic -T sky130a.tech sky130_inv.mag &
 ![v38](./../images/Day3_images/v38.png)
 
 
-  To select the whole layout, press S.
+ - To select the whole layout, press S.
  
-  To place the layout at the centre of the window, press V. 
+ - To place the layout at the centre of the window, press V. 
  
-  To see a particular portion in a zoom view, press S to select a particular  portion and then press Z, to zoom on that particular portion.
+ - To see a particular portion in a zoom view, press S to select a particular  portion and then press Z, to zoom on that particular portion.
  
-  Now, if we want to know about the particular layer in the layout, follow the below steps: 
+ - Now, if we want to know about the particular layer in the layout, follow the below steps: 
  
 • Select the particular portion or layer about which you want to know. 
 
@@ -297,8 +297,11 @@ Now, we have to make use of the li1 layer dimensions to convert tracks info to g
 
 Now, in this session, we will some osme of the DRC rules of sky130 tech. 
  For that, first we have to install a zip file. 
+ 
  The link for zip file is  http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+ 
  after opening drc tests directory, we can see number of .mag files.
+ 
 ![v61](./../images/Day3_images/v61.png)
  Now lets open met3.mag , it can viewed as follows:
  ![v44](./../images/Day3_images/v62.png)
