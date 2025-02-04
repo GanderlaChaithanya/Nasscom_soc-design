@@ -199,7 +199,7 @@ It acts as a interface between fabrication units and designers.
 The key components of PDK are design rules,technology files,standard cell libraries, 
 SPICE models etc.
 ### **DESIGN FLOW**
-![ASIC_](./../images/Day1_images/asic.png)
+![ASIC_](./../images/Day1_images/design_flow.png)
  ### **INTRODUCTION TO OPENLANE AND STRIVE SOC FAMILY**
  Strive is a family of open everything. For example like open pdk, open eda, open rtl
  ![pstrive](./../images/Day1_images/Strive.png)
