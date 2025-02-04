@@ -1,4 +1,4 @@
-# SKY_DAY2:GOOD FLOORPLANNING VS BAD FLOORPLAN AND INTRODUCTION TO LIBRARY CELLS
+# Sky130_Day2:Good Floorplan vs Bad Floorplan & Introduction to Library Cells
 ## CHIP FLOORPLANNING CONSIDERATIONS:
 Let us know breifly about core and Die.
 
