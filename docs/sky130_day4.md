@@ -115,7 +115,8 @@ After the process of clock net shielding, the layout we can see is as follows:
 ### LABS:
 
 - now to include sky130_vsd.inv follow the steps below:
-  - to run synthesis, first run all the commands below:
+- to run synthesis, first run all the commands below:
+ 
 ![day3_lab](./../images/Day4_images/day3_lab.png)
 
 after that, we can see as follows:
