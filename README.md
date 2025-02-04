@@ -1,7 +1,9 @@
 # Nasscom_Vsd_Soc_design
 This is a 5 day workshop on **Digital vlsi design and soc planning** where we can learn how to use opensource eda tools using sky130nm technology.This course covers the complete design process from logic synthesis to layout generation.
 
-The **PicoRV32A chip** is a compact and efficient **RISC-V** based soft-core processor, designed for FPGA and ASIC implementations. It is an extension of the PicoRV32 processor, optimized for area and power efficiency while maintaining flexibility for various applications. The RTL-to-GDS flow of the PicoRV32A chip follows a standard ASIC design methodology using **OpenLane**, an open-source EDA toolchain. The process begins with **Register Transfer Level (RTL)** design, which is synthesized into a gate-level netlist. This is followed by **floorplanning, placement, clock tree synthesis (CTS), routing, and Design Rule Check (DRC)/Layout Versus Schematic (LVS) verification** to ensure manufacturability. The final step generates the **GDSII layout**, which can be fabricated using the **SKY130 process node**, making it suitable for open-source silicon projects.
+The **PicoRV32A chip** is a compact and efficient **RISC-V** based soft-core processor, designed for FPGA and ASIC implementations. It is an extension of the PicoRV32 processor, optimized for area and power efficiency while maintaining flexibility for various applications. The RTL-to-GDS flow of the PicoRV32A chip follows a standard ASIC design methodology using **OpenLane**, an open-source EDA toolchain. The process begins with **Register Transfer Level (RTL)** design, which is synthesized into a gate-level netlist. 
+
+This is followed by **floorplanning, placement, clock tree synthesis (CTS), routing, and Design Rule Check (DRC)/Layout Versus Schematic (LVS) verification** to ensure manufacturability. The final step generates the **GDSII layout**, which can be fabricated using the **SKY130 process node**, making it suitable for open-source silicon projects.
 ## Table of contents
 
 
